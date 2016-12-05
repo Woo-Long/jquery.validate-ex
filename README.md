@@ -5,16 +5,25 @@
 更改jquery.validate默认显示验证的信息，改为基于bootstrap的tootip弹出方式，必须引用`bootstrap`
 
 ```style
- .input-validation-error {
+ form .input-validation-error {
     border: 1px solid #f00;
     background-color: #fee;
- }
+}
 
- form .tooltip.top .tooltip-arrow {
+.icheck-validation {
+    border: 1px solid transparent;
+}
+
+form .tooltip.top .tooltip-arrow {
+    bottom: 1px;
     border-top-color: #d95d5d;
- }
+}
 
- form .tooltip-inner {
+form .tooltip.bottom .tooltip-arrow {
+    border-bottom-color: #d95d5d;
+}
+
+form .tooltip-inner {
     background-color: #d95d5d;
- }
+}
 ```
