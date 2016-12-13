@@ -1,3 +1,11 @@
+/*
+* =======================================================
+* jquery.validate-ex
+* Jason (Long.Woo)
+* https://github.com/Woo-Long/jquery.validate-ex
+* =======================================================
+*/
+
 (function ($) {
     $.extend($.validator, {
         messages: {
@@ -62,5 +70,10 @@
             }
         }
     });
+
+    // 两位小数点验证
+    $.validator.addMethod("twodecimal", function (value, element, params) {
+        return this.optional(element) || (/\d+(\.\d{1,2})?/.test(value));
+    },"小数点后面只能为两位");
 
 })(jQuery);
