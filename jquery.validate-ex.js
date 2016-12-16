@@ -39,7 +39,7 @@
                 var elementName = $errorElement.attr("name");
 
                 if ($errorElement.is(":radio") || $errorElement.is(":checkbox")) {
-                    var $p = $errorElement.parents("div").prev('[for="' + elementName + '"]').next();
+                    var $p = $errorElement.parents(".icheck-validation");
                     $errorElement = $p;
                 }
 
@@ -53,7 +53,7 @@
                 var elementName = $errorElement.attr("name");
 
                 if ($errorElement.is(":radio") || $errorElement.is(":checkbox")) {
-                    var $p = $errorElement.parents("div").prev('[for="' + elementName + '"]').next();
+                    var $p = $errorElement.parents(".icheck-validation");
                     $errorElement = $p;
                 }
 
