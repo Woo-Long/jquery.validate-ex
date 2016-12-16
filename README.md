@@ -27,3 +27,10 @@ form .tooltip-inner {
     background-color: #d95d5d;
 }
 ```
+---
+radio 按钮验证
+```html
+<div class="icheck-validation">
+<!--你的radio代码-->
+</div>
+```
